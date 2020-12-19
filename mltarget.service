@@ -1,0 +1,10 @@
+[Unit]
+Description=M.L. Laser Targeting
+After=network-online.target
+
+[Service]
+ExecStart=/usr/local/bin/mltarget.sh
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target
